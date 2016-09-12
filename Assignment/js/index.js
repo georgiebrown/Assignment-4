@@ -1,6 +1,12 @@
 $(document).ready(start);
 
-$(document).ready(function(){
-    $("readmore").click(function(){
-        $('hide').show();
-    });
+function start() {
+  alert("hello")
+  $('#showContent').click(showParagraph);
+}
+
+function showParagraph(event) {
+    event.preventDefault();
+    $('#showThisOnClick').show();
+
+}
